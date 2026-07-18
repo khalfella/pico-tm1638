@@ -27,9 +27,10 @@ interface.
 | **CLK** | Input | Serial Clock | **GPIO 20** (Pin 26) |
 | **DIO** | Bi-directional | Data Input / Output | **GPIO 19** (Pin 25) |
 
-**Note on 5V Operation:** The TM1638 is natively a 5V device. DIO line will push 5V
-back during key-scan reads. Use 1kOhm series resistor or level shifter to avoid
-damaging to the Pico's 3.3V tolerant GPIOs. Use at your own risk.
+**Note on 5V Operation:** The TM1638 is natively a 5V device. DIO line will
+push 5V back during key-scan reads. Use 1kOhm series resistor or level shifter
+(tested with TXS0108E) to avoid damaging to the Pico's 3.3V tolerant GPIOs.
+Use at your own risk.
 
 ### Example code
 
